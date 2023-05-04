@@ -9,30 +9,18 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
 
   <title>Frontend Mentor | Results summary component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
 
-  Your Result
-  76
-  of 100
-
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-
-  Summary
+  <!-- 
 
   Reaction
   80 / 100
@@ -46,12 +34,79 @@
   Visual
   72 / 100
 
-  Continue
+  Continue -->
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+  <main class="row g-2">
+    <section class="main_block  row gx-3">
+      <div class="col-6 blue_result card p-3">
+        <h3>
+          Your Result
+        </h3>
+        <div class="circle_point">
+          <h1>76</h1>
+          <p>of 100</p>
+        </div>
+        <h2>Great</h2>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+      <div class="col-6 white_summary row ps-5 pe-0">
+        <div class="row summary_list my-4 px-0">
+          <h3>Summary</h3>
+          <div class="alert alert-danger">
+            <div class="named">
+              <img src="./assets/images/icon-reaction.svg" alt="">
+              <p class="text-danger my-1 p-0">Reaction</p>
+            </div>
+            <div class="point">
+              <b> 80 </b> / 100
+            </div>
+          </div>
+          <div class="alert alert-warning">
+            <div class="named text-warning">
+              <img src="./assets/images/icon-memory.svg" alt="">
+              <p class="my-1 p-0">Memory</p>
+            </div>
+            <div class="point">
+              <b> 92 </b> / 100
+            </div>
+          </div>
+          <div class="alert alert-success">
+            <div class="named text-success">
+              <img src="./assets/images/icon-verbal.svg" alt="">
+              <p class=" my-1 p-0">Verbal</p>
+            </div>
+            <div class="point">
+              <b> 61 </b> / 100
+            </div>
+          </div>
+          <div class="alert alert-primary">
+            <div class="named text-blue">
+              <img src="./assets/images/icon-visual.svg" alt="">
+              <p class=" my-1 p-0">Visual</p>
+            </div>
+            <div class="point">
+              <b> 72 </b> / 100
+            </div>
+          </div>
+          <div class="btn text-light">Continue</div>
+        </div>
+      </div>
+
+    </section>
+    <div class="col-12 attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+  </main>
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
