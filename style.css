@@ -90,6 +90,9 @@ p {
 }
 
 .white_summary {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 0 1.5rem;
 }
 
@@ -108,6 +111,15 @@ p {
     align-items: center;
 
 }
+.text-danger{
+    color:var(--Light_red);
+}
+.text-warning{
+    color:var(--Orangey_yellow);
+}
+.text-success{
+    color:var(--Green_teal);
+}
 
 .named {
     display: flex;
@@ -116,7 +128,13 @@ p {
     min-width: 40%;
     margin: 0 10px;
 }
-
+.point{
+    color:gray;
+    font-weight: 500;
+}
+.point b{
+    color: black;
+}
 .named p {
     margin-left: 10px;
 }
